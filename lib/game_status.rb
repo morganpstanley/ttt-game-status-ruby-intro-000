@@ -60,9 +60,8 @@ end
 
 def winner(board)
   i = won?(board)
-  if i != false
-    x = i[0]
-     return board[x]
+  if won?(board) != false
+     return won?(board[0])
    else
      return nil
    end
